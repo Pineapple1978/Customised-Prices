@@ -1,2 +1,477 @@
-# Customised-Prices
-Customised Prices
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<title>Lela Sacks Cost Calculator</title>
+
+
+
+<style>
+
+
+
+body{
+
+background:#eef2f7;
+
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+
+margin:0;
+
+padding:20px;
+
+}
+
+
+
+.card{
+
+max-width:700px;
+
+margin:auto;
+
+background:white;
+
+border-radius:18px;
+
+padding:25px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+}
+
+
+
+h1{
+
+text-align:center;
+
+color:#003366;
+
+margin-bottom:5px;
+
+}
+
+
+
+h3{
+
+text-align:center;
+
+color:#666;
+
+margin-top:0;
+
+margin-bottom:25px;
+
+font-weight:normal;
+
+}
+
+
+
+table{
+
+width:100%;
+
+border-collapse:collapse;
+
+}
+
+
+
+th{
+
+background:#003366;
+
+color:white;
+
+padding:12px;
+
+}
+
+
+
+td{
+
+padding:12px;
+
+border-bottom:1px solid #ddd;
+
+text-align:center;
+
+}
+
+
+
+input{
+
+width:80px;
+
+padding:8px;
+
+font-size:16px;
+
+text-align:center;
+
+border-radius:6px;
+
+border:1px solid #ccc;
+
+}
+
+
+
+.total{
+
+background:#f7f7f7;
+
+font-weight:bold;
+
+}
+
+
+
+.green{
+
+color:green;
+
+font-weight:bold;
+
+font-size:18px;
+
+}
+
+
+
+.footer{
+
+
+
+margin-top:20px;
+
+
+
+text-align:center;
+
+
+
+color:#777;
+
+
+
+font-size:13px;
+
+
+
+}
+
+
+
+</style>
+
+
+
+</head>
+
+
+
+<body>
+
+
+
+<div class="card">
+
+
+
+<h1>LELA SACKS</h1>
+
+
+
+<h3>PP Woven Sack Cost Calculator</h3>
+
+
+
+<table>
+
+
+
+<tr>
+
+
+
+<th>Material</th>
+
+
+
+<th>Rate</th>
+
+
+
+<th>Weight (gm)</th>
+
+
+
+<th>Price</th>
+
+
+
+</tr>
+
+
+
+<tr>
+
+
+
+<td>PP</td>
+
+
+
+<td><input id="ppRate" value="3700" oninput="calc()"></td>
+
+
+
+<td><input id="ppWt" value="120" oninput="calc()"></td>
+
+
+
+<td id="ppPrice">444.00</td>
+
+
+
+</tr>
+
+
+
+<tr>
+
+
+
+<td>BOPP Front</td>
+
+
+
+<td><input id="bfRate" value="9500" oninput="calc()"></td>
+
+
+
+<td><input id="bfWt" value="10" oninput="calc()"></td>
+
+
+
+<td id="bfPrice">95.00</td>
+
+
+
+</tr>
+
+
+
+<tr>
+
+
+
+<td>BOPP Back</td>
+
+
+
+<td><input id="bbRate" value="9500" oninput="calc()"></td>
+
+
+
+<td><input id="bbWt" value="10" oninput="calc()"></td>
+
+
+
+<td id="bbPrice">95.00</td>
+
+
+
+</tr>
+
+
+
+<tr class="total">
+
+
+
+<td><b>Total</b></td>
+
+
+
+<td></td>
+
+
+
+<td id="totalWeight"><b>140</b></td>
+
+
+
+<td class="green" id="bagPrice">634.00</td>
+
+
+
+</tr>
+
+
+
+<tr class="total">
+
+
+
+<td><b>Per Bale (NGN)</b></td>
+
+
+
+<td colspan="2"></td>
+
+
+
+<td class="green" id="balePrice">317,000.00</td>
+
+
+
+</tr>
+
+
+
+<tr class="total">
+
+
+
+<td><b>Bale Weight (Kg)</b></td>
+
+
+
+<td colspan="2"></td>
+
+
+
+<td class="green" id="baleWeight">70.00</td>
+
+
+
+</tr>
+
+
+
+</table>
+
+
+
+<div class="footer">
+
+
+
+© Lela Sacks Agro Ltd.
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+<script>
+
+
+
+function calc(){
+
+
+
+let ppRate=parseFloat(document.getElementById("ppRate").value)||0;
+
+let ppWt=parseFloat(document.getElementById("ppWt").value)||0;
+
+
+
+let bfRate=parseFloat(document.getElementById("bfRate").value)||0;
+
+let bfWt=parseFloat(document.getElementById("bfWt").value)||0;
+
+
+
+let bbRate=parseFloat(document.getElementById("bbRate").value)||0;
+
+let bbWt=parseFloat(document.getElementById("bbWt").value)||0;
+
+
+
+let pp=(ppRate*ppWt)/1000;
+
+let bf=(bfRate*bfWt)/1000;
+
+let bb=(bbRate*bbWt)/1000;
+
+
+
+let totalWeight=ppWt+bfWt+bbWt;
+
+
+
+let bag=pp+bf+bb;
+
+
+
+let bale=bag*500;
+
+
+
+let baleWt=totalWeight*500/1000;
+
+
+
+document.getElementById("ppPrice").innerHTML=pp.toFixed(2);
+
+document.getElementById("bfPrice").innerHTML=bf.toFixed(2);
+
+document.getElementById("bbPrice").innerHTML=bb.toFixed(2);
+
+
+
+document.getElementById("totalWeight").innerHTML=totalWeight.toFixed(0);
+
+
+
+document.getElementById("bagPrice").innerHTML=bag.toFixed(2);
+
+
+
+document.getElementById("balePrice").innerHTML=bale.toLocaleString(undefined,{minimumFractionDigits:2});
+
+
+
+document.getElementById("baleWeight").innerHTML=baleWt.toFixed(2);
+
+
+
+}
+
+
+
+calc();
+
+
+
+</script>
+
+
+
+</body>
+
+
+
+</html>
