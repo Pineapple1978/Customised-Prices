@@ -7,443 +7,441 @@
   <meta name="Generator" content="Cocoa HTML Writer">
   <meta name="CocoaVersion" content="2685.1">
   <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; -webkit-text-stroke: #000000; min-height: 14.0px}
+    span.s1 {font-kerning: none}
   </style>
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="en"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;meta charset="UTF-8"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;meta name="viewport"</p>
-<p class="p1">content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;title&gt;Lela Sacks Cost Calculator&lt;/title&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;style&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">*{</p>
-<p class="p2"><br></p>
-<p class="p1">margin:0;</p>
-<p class="p2"><br></p>
-<p class="p1">padding:0;</p>
-<p class="p2"><br></p>
-<p class="p1">box-sizing:border-box;</p>
-<p class="p2"><br></p>
-<p class="p1">font-family:-apple-system,</p>
-<p class="p1">BlinkMacSystemFont,</p>
-<p class="p1">"SF Pro Display",</p>
-<p class="p1">Arial,</p>
-<p class="p1">sans-serif;</p>
-<p class="p2"><br></p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">body{</p>
-<p class="p2"><br></p>
-<p class="p1">background:#eef2f6;</p>
-<p class="p2"><br></p>
-<p class="p1">padding:12px;</p>
-<p class="p2"><br></p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.container{</p>
-<p class="p2"><br></p>
-<p class="p1">max-width:390px;</p>
-<p class="p2"><br></p>
-<p class="p1">margin:auto;</p>
-<p class="p2"><br></p>
-<p class="p1">background:white;</p>
-<p class="p2"><br></p>
-<p class="p1">border-radius:20px;</p>
-<p class="p2"><br></p>
-<p class="p1">overflow:hidden;</p>
-<p class="p2"><br></p>
-<p class="p1">box-shadow:0 10px 30px rgba(0,0,0,.18);</p>
-<p class="p2"><br></p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.header{</p>
-<p class="p2"><br></p>
-<p class="p1">background:#003A70;</p>
-<p class="p2"><br></p>
-<p class="p1">color:white;</p>
-<p class="p2"><br></p>
-<p class="p1">padding:20px;</p>
-<p class="p2"><br></p>
-<p class="p1">text-align:center;</p>
-<p class="p2"><br></p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.logo{</p>
-<p class="p2"><br></p>
-<p class="p1">width:60px;</p>
-<p class="p2"><br></p>
-<p class="p1">height:60px;</p>
-<p class="p2"><br></p>
-<p class="p1">border-radius:50%;</p>
-<p class="p2"><br></p>
-<p class="p1">background:white;</p>
-<p class="p2"><br></p>
-<p class="p1">margin:auto;</p>
-<p class="p2"><br></p>
-<p class="p1">display:flex;</p>
-<p class="p2"><br></p>
-<p class="p1">align-items:center;</p>
-<p class="p2"><br></p>
-<p class="p1">justify-content:center;</p>
-<p class="p2"><br></p>
-<p class="p1">font-size:24px;</p>
-<p class="p2"><br></p>
-<p class="p1">font-weight:bold;</p>
-<p class="p2"><br></p>
-<p class="p1">color:#003A70;</p>
-<p class="p2"><br></p>
-<p class="p1">margin-bottom:10px;</p>
-<p class="p2"><br></p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.header h1{</p>
-<p class="p2"><br></p>
-<p class="p1">font-size:24px;</p>
-<p class="p2"><br></p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.header p{</p>
-<p class="p2"><br></p>
-<p class="p1">font-size:13px;</p>
-<p class="p2"><br></p>
-<p class="p1">opacity:.85;</p>
-<p class="p2"><br></p>
-<p class="p1">margin-top:5px;</p>
-<p class="p2"><br></p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.content{</p>
-<p class="p2"><br></p>
-<p class="p1">padding:15px;</p>
-<p class="p2"><br></p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">table{</p>
-<p class="p2"><br></p>
-<p class="p1">width:100%;</p>
-<p class="p2"><br></p>
-<p class="p1">border-collapse:collapse;</p>
-<p class="p2"><br></p>
-<p class="p1">table-layout:fixed;</p>
-<p class="p2"><br></p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">th{</p>
-<p class="p2"><br></p>
-<p class="p1">background:#003A70;</p>
-<p class="p2"><br></p>
-<p class="p1">color:white;</p>
-<p class="p2"><br></p>
-<p class="p1">padding:8px 3px;</p>
-<p class="p2"><br></p>
-<p class="p1">font-size:12px;</p>
-<p class="p2"><br></p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">td{</p>
-<p class="p2"><br></p>
-<p class="p1">padding:7px 3px;</p>
-<p class="p2"><br></p>
-<p class="p1">border-bottom:1px solid #ddd;</p>
-<p class="p2"><br></p>
-<p class="p1">font-size:12px;</p>
-<p class="p2"><br></p>
-<p class="p1">text-align:center;</p>
-<p class="p2"><br></p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">td:first-child{</p>
-<p class="p2"><br></p>
-<p class="p1">text-align:left;</p>
-<p class="p2"><br></p>
-<p class="p1">font-weight:600;</p>
-<p class="p2"><br></p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">input{</p>
-<p class="p2"><br></p>
-<p class="p1">width:55px;</p>
-<p class="p2"><br></p>
-<p class="p1">padding:5px;</p>
-<p class="p2"><br></p>
-<p class="p1">font-size:12px;</p>
-<p class="p2"><br></p>
-<p class="p1">text-align:center;</p>
-<p class="p2"><br></p>
-<p class="p1">border-radius:5px;</p>
-<p class="p2"><br></p>
-<p class="p1">border:1px solid #bbb;</p>
-<p class="p2"><br></p>
-<p class="p1">outline:none;</p>
-<p class="p2"><br></p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">input:focus{</p>
-<p class="p2"><br></p>
-<p class="p1">border-color:#003A70;</p>
-<p class="p2"><br></p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.totalRow{</p>
-<p class="p2"><br></p>
-<p class="p1">background:#f8f8f8;</p>
-<p class="p2"><br></p>
-<p class="p1">font-weight:bold;</p>
-<p class="p2"><br></p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.green{</p>
-<p class="p2"><br></p>
-<p class="p1">color:#008000;</p>
-<p class="p2"><br></p>
-<p class="p1">font-weight:bold;</p>
-<p class="p2"><br></p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.footer{</p>
-<p class="p2"><br></p>
-<p class="p1">padding:15px;</p>
-<p class="p2"><br></p>
-<p class="p1">text-align:center;</p>
-<p class="p2"><br></p>
-<p class="p1">font-size:11px;</p>
-<p class="p2"><br></p>
-<p class="p1">color:#777;</p>
-<p class="p2"><br></p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/style&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;div class="container"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;div class="header"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;div class="logo"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">LS</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;h1&gt;Lela Sacks&lt;/h1&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;p&gt;PP Woven Sack Cost Calculator&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;div class="content"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;table&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;tr&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;th style="width:34%;"&gt;Material&lt;/th&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;th style="width:20%;"&gt;Rate&lt;/th&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;th style="width:18%;"&gt;Wt&lt;/th&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;th style="width:28%;"&gt;Price&lt;/th&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/tr&gt;</p>
-<p class="p1">&lt;tr&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;td&gt;PP&lt;/td&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;td&gt;</p>
-<p class="p1">&lt;input</p>
-<p class="p1">type="number"</p>
-<p class="p1">id="ppRate"</p>
-<p class="p1">value="3700"</p>
-<p class="p1">oninput="calc()"&gt;</p>
-<p class="p1">&lt;/td&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;td&gt;</p>
-<p class="p1">&lt;input</p>
-<p class="p1">type="number"</p>
-<p class="p1">id="ppWt"</p>
-<p class="p1">value="120"</p>
-<p class="p1">oninput="calc()"&gt;</p>
-<p class="p1">&lt;/td&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;td id="ppPrice"&gt;444.00&lt;/td&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/tr&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;tr&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;td&gt;BOPP Front&lt;/td&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;td&gt;</p>
-<p class="p1">&lt;input</p>
-<p class="p1">type="number"</p>
-<p class="p1">id="bfRate"</p>
-<p class="p1">value="9500"</p>
-<p class="p1">oninput="calc()"&gt;</p>
-<p class="p1">&lt;/td&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;td&gt;</p>
-<p class="p1">&lt;input</p>
-<p class="p1">type="number"</p>
-<p class="p1">id="bfWt"</p>
-<p class="p1">value="10"</p>
-<p class="p1">oninput="calc()"&gt;</p>
-<p class="p1">&lt;/td&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;td id="bfPrice"&gt;95.00&lt;/td&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/tr&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;tr&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;td&gt;BOPP Back&lt;/td&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;td&gt;</p>
-<p class="p1">&lt;input</p>
-<p class="p1">type="number"</p>
-<p class="p1">id="bbRate"</p>
-<p class="p1">value="9500"</p>
-<p class="p1">oninput="calc()"&gt;</p>
-<p class="p1">&lt;/td&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;td&gt;</p>
-<p class="p1">&lt;input</p>
-<p class="p1">type="number"</p>
-<p class="p1">id="bbWt"</p>
-<p class="p1">value="10"</p>
-<p class="p1">oninput="calc()"&gt;</p>
-<p class="p1">&lt;/td&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;td id="bbPrice"&gt;95.00&lt;/td&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/tr&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;tr class="totalRow"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;td&gt;Total&lt;/td&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;td&gt;&lt;/td&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;td id="totalWeight"&gt;140&lt;/td&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;td class="green" id="bagPrice"&gt;634.00&lt;/td&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/tr&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;tr class="totalRow"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;td&gt;Per Bale (NGN)&lt;/td&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;td colspan="2"&gt;&lt;/td&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;td class="green" id="balePrice"&gt;317,000.00&lt;/td&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/tr&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;tr class="totalRow"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;td&gt;Bale Weight (Kg)&lt;/td&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;td colspan="2"&gt;&lt;/td&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;td class="green" id="baleWeight"&gt;70.00&lt;/td&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/tr&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/table&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;div class="footer"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">© Lela Sacks Agro Ltd.</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/div&gt;</p>
-<p class="p1">&lt;script&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">function calc(){</p>
-<p class="p2"><br></p>
-<p class="p1">let ppRate=parseFloat(document.getElementById("ppRate").value)||0;</p>
-<p class="p1">let ppWt=parseFloat(document.getElementById("ppWt").value)||0;</p>
-<p class="p2"><br></p>
-<p class="p1">let bfRate=parseFloat(document.getElementById("bfRate").value)||0;</p>
-<p class="p1">let bfWt=parseFloat(document.getElementById("bfWt").value)||0;</p>
-<p class="p2"><br></p>
-<p class="p1">let bbRate=parseFloat(document.getElementById("bbRate").value)||0;</p>
-<p class="p1">let bbWt=parseFloat(document.getElementById("bbWt").value)||0;</p>
-<p class="p2"><br></p>
-<p class="p1">/* Material Costs */</p>
-<p class="p2"><br></p>
-<p class="p1">let ppCost=(ppRate*ppWt)/1000;</p>
-<p class="p2"><br></p>
-<p class="p1">let bfCost=(bfRate*bfWt)/1000;</p>
-<p class="p2"><br></p>
-<p class="p1">let bbCost=(bbRate*bbWt)/1000;</p>
-<p class="p2"><br></p>
-<p class="p1">/* Totals */</p>
-<p class="p2"><br></p>
-<p class="p1">let totalWeight=ppWt+bfWt+bbWt;</p>
-<p class="p2"><br></p>
-<p class="p1">let bagPrice=ppCost+bfCost+bbCost;</p>
-<p class="p2"><br></p>
-<p class="p1">let balePrice=bagPrice*500;</p>
-<p class="p2"><br></p>
-<p class="p1">let baleWeight=(totalWeight*500)/1000;</p>
-<p class="p2"><br></p>
-<p class="p1">/* Display */</p>
-<p class="p2"><br></p>
-<p class="p1">document.getElementById("ppPrice").innerHTML=</p>
-<p class="p1">ppCost.toFixed(2);</p>
-<p class="p2"><br></p>
-<p class="p1">document.getElementById("bfPrice").innerHTML=</p>
-<p class="p1">bfCost.toFixed(2);</p>
-<p class="p2"><br></p>
-<p class="p1">document.getElementById("bbPrice").innerHTML=</p>
-<p class="p1">bbCost.toFixed(2);</p>
-<p class="p2"><br></p>
-<p class="p1">document.getElementById("totalWeight").innerHTML=</p>
-<p class="p1">totalWeight.toFixed(0);</p>
-<p class="p2"><br></p>
-<p class="p1">document.getElementById("bagPrice").innerHTML=</p>
-<p class="p1">bagPrice.toFixed(2);</p>
-<p class="p2"><br></p>
-<p class="p1">document.getElementById("balePrice").innerHTML=</p>
-<p class="p1">balePrice.toLocaleString(undefined,{</p>
-<p class="p1">minimumFractionDigits:2,</p>
-<p class="p1">maximumFractionDigits:2</p>
-<p class="p1">});</p>
-<p class="p2"><br></p>
-<p class="p1">document.getElementById("baleWeight").innerHTML=</p>
-<p class="p1">baleWeight.toFixed(2);</p>
-<p class="p2"><br></p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">/* Run when page opens */</p>
-<p class="p2"><br></p>
-<p class="p1">window.onload=function(){</p>
-<p class="p2"><br></p>
-<p class="p1">calc();</p>
-<p class="p2"><br></p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/script&gt;</p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/html&gt;</p>
+<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
+<p class="p1"><span class="s1">&lt;html lang="en"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;head&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;meta charset="UTF-8"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;meta name="viewport"</span></p>
+<p class="p1"><span class="s1">content="width=device-width, initial-scale=1.0"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;title&gt;Lela Sacks Cost Calculator&lt;/title&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;style&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">*{</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">margin:0;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">padding:0;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">box-sizing:border-box;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">font-family:-apple-system,</span></p>
+<p class="p1"><span class="s1">BlinkMacSystemFont,</span></p>
+<p class="p1"><span class="s1">"SF Pro Display",</span></p>
+<p class="p1"><span class="s1">Arial,</span></p>
+<p class="p1"><span class="s1">sans-serif;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">body{</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">background:#eef2f6;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">padding:12px;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.container{</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">max-width:390px;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">margin:auto;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">background:white;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">border-radius:20px;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">overflow:hidden;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">box-shadow:0 10px 30px rgba(0,0,0,.18);</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.header{</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">background:#003A70;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">color:white;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">padding:20px;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">text-align:center;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.logo{</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">width:60px;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">height:60px;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">border-radius:50%;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">background:white;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">margin:auto;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">display:flex;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">align-items:center;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">justify-content:center;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">font-size:24px;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">font-weight:bold;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">color:#003A70;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">margin-bottom:10px;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.header h1{</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">font-size:24px;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.header p{</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">font-size:13px;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">opacity:.85;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">margin-top:5px;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.content{</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">padding:15px;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">table{</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">width:100%;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">border-collapse:collapse;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">table-layout:fixed;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">th{</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">background:#003A70;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">color:white;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">padding:8px 3px;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">font-size:12px;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">td{</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">padding:7px 3px;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">border-bottom:1px solid #ddd;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">font-size:12px;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">text-align:center;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">td:first-child{</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">text-align:left;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">font-weight:600;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">input{</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">width:55px;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">padding:5px;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">font-size:12px;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">text-align:center;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">border-radius:5px;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">border:1px solid #bbb;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">outline:none;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">input:focus{</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">border-color:#003A70;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.totalRow{</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">background:#f8f8f8;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">font-weight:bold;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.green{</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">color:#008000;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">font-weight:bold;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.footer{</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">padding:15px;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">text-align:center;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">font-size:11px;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">color:#777;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/style&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;body&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="container"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="header"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="logo"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">LS</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;h1&gt;Lela Sacks&lt;/h1&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;p&gt;PP Woven Sack Cost Calculator&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="content"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;table&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;tr&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;th style="width:34%;"&gt;Material&lt;/th&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;th style="width:20%;"&gt;Rate&lt;/th&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;th style="width:18%;"&gt;Wt&lt;/th&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;th style="width:28%;"&gt;Price&lt;/th&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/tr&gt;&lt;tr&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;td&gt;PP&lt;/td&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;input</span></p>
+<p class="p1"><span class="s1">type="number"</span></p>
+<p class="p1"><span class="s1">id="ppRate"</span></p>
+<p class="p1"><span class="s1">value="3700"</span></p>
+<p class="p1"><span class="s1">oninput="calc()"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/td&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;input</span></p>
+<p class="p1"><span class="s1">type="number"</span></p>
+<p class="p1"><span class="s1">id="ppWt"</span></p>
+<p class="p1"><span class="s1">value="120"</span></p>
+<p class="p1"><span class="s1">oninput="calc()"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/td&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;td id="ppPrice"&gt;444.00&lt;/td&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/tr&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;tr&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;td&gt;BOPP Front&lt;/td&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;input</span></p>
+<p class="p1"><span class="s1">type="number"</span></p>
+<p class="p1"><span class="s1">id="bfRate"</span></p>
+<p class="p1"><span class="s1">value="9500"</span></p>
+<p class="p1"><span class="s1">oninput="calc()"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/td&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;input</span></p>
+<p class="p1"><span class="s1">type="number"</span></p>
+<p class="p1"><span class="s1">id="bfWt"</span></p>
+<p class="p1"><span class="s1">value="10"</span></p>
+<p class="p1"><span class="s1">oninput="calc()"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/td&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;td id="bfPrice"&gt;95.00&lt;/td&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/tr&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;tr&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;td&gt;BOPP Back&lt;/td&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;input</span></p>
+<p class="p1"><span class="s1">type="number"</span></p>
+<p class="p1"><span class="s1">id="bbRate"</span></p>
+<p class="p1"><span class="s1">value="9500"</span></p>
+<p class="p1"><span class="s1">oninput="calc()"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/td&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;input</span></p>
+<p class="p1"><span class="s1">type="number"</span></p>
+<p class="p1"><span class="s1">id="bbWt"</span></p>
+<p class="p1"><span class="s1">value="10"</span></p>
+<p class="p1"><span class="s1">oninput="calc()"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/td&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;td id="bbPrice"&gt;95.00&lt;/td&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/tr&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;tr class="totalRow"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;td&gt;Total&lt;/td&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;td&gt;&lt;/td&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;td id="totalWeight"&gt;140&lt;/td&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;td class="green" id="bagPrice"&gt;634.00&lt;/td&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/tr&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;tr class="totalRow"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;td&gt;Per Bale (NGN)&lt;/td&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;td colspan="2"&gt;&lt;/td&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;td class="green" id="balePrice"&gt;317,000.00&lt;/td&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/tr&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;tr class="totalRow"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;td&gt;Bale Weight (Kg)&lt;/td&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;td colspan="2"&gt;&lt;/td&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;td class="green" id="baleWeight"&gt;70.00&lt;/td&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/tr&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/table&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="footer"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">© Lela Sacks Agro Ltd.</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/div&gt;&lt;script&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">function calc(){</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">let ppRate=parseFloat(document.getElementById("ppRate").value)||0;</span></p>
+<p class="p1"><span class="s1">let ppWt=parseFloat(document.getElementById("ppWt").value)||0;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">let bfRate=parseFloat(document.getElementById("bfRate").value)||0;</span></p>
+<p class="p1"><span class="s1">let bfWt=parseFloat(document.getElementById("bfWt").value)||0;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">let bbRate=parseFloat(document.getElementById("bbRate").value)||0;</span></p>
+<p class="p1"><span class="s1">let bbWt=parseFloat(document.getElementById("bbWt").value)||0;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">/* Material Costs */</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">let ppCost=(ppRate*ppWt)/1000;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">let bfCost=(bfRate*bfWt)/1000;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">let bbCost=(bbRate*bbWt)/1000;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">/* Totals */</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">let totalWeight=ppWt+bfWt+bbWt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">let bagPrice=ppCost+bfCost+bbCost;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">let balePrice=bagPrice*500;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">let baleWeight=(totalWeight*500)/1000;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">/* Display */</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">document.getElementById("ppPrice").innerHTML=</span></p>
+<p class="p1"><span class="s1">ppCost.toFixed(2);</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">document.getElementById("bfPrice").innerHTML=</span></p>
+<p class="p1"><span class="s1">bfCost.toFixed(2);</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">document.getElementById("bbPrice").innerHTML=</span></p>
+<p class="p1"><span class="s1">bbCost.toFixed(2);</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">document.getElementById("totalWeight").innerHTML=</span></p>
+<p class="p1"><span class="s1">totalWeight.toFixed(0);</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">document.getElementById("bagPrice").innerHTML=</span></p>
+<p class="p1"><span class="s1">bagPrice.toFixed(2);</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">document.getElementById("balePrice").innerHTML=</span></p>
+<p class="p1"><span class="s1">balePrice.toLocaleString(undefined,{</span></p>
+<p class="p1"><span class="s1">minimumFractionDigits:2,</span></p>
+<p class="p1"><span class="s1">maximumFractionDigits:2</span></p>
+<p class="p1"><span class="s1">});</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">document.getElementById("baleWeight").innerHTML=</span></p>
+<p class="p1"><span class="s1">baleWeight.toFixed(2);</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">/* Run when page opens */</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">window.onload=function(){</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">calc();</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/script&gt;&lt;/body&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
 </body>
 </html>
